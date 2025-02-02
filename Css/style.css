@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #35CBCB; /* Azul */
+    --cor-secundaria: #188E8E; /* Azul Esc */
+    --cor-fundo: #FFFFFF; /* Cinza claro */
+    --cor-texto: #000000; /* Cor de texto escura */
+  }
+
+  
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+  /* INICIO HEADER */
+
+.nav {
+    background-color: var(--cor-principal);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky; /*HEADER FIXO*/
+    top: 0;           /*HEADER FIXO*/
+    z-index: 9;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    padding: 50px;
+}
+
+.nav-list a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* FIM HEADER */
+
+/* INICIO DO MAIN */
+.main {
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url("../image/apartamento4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left; /* Alinha os itens à direita */
+    align-items: center;
+    padding-left: 10%; /* Ajuste do espaçamento à direita */
+    
+    transition: background-image 1s ease-in-out;
+}
+
+.main h1 {
+    color: #FFFFFF;
+    font-size: 54px;
+}
+
+.main p {
+    font-size: 24px;
+    font-style: italic;
+    color: var(--cor-principal);
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.call-to-action {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 0;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9s;
+}
+
+.call-to-action:hover {
+    transform: scale(1.1);
+}
+
+.main a {
+    text-decoration: none;
+    color: #181818;
+}
+
+/* FIM MAIN */
+
+/* INICIO SOBRE */
+
+.about {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div {
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img {
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.about div h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+/* FIM DO SOBRE */
+
+
+/* INICIO APARTAMENTOS */
+.projects {
+    text-align: center; /* Centraliza o texto dentro da section */
+    margin: 0 auto; /* Centraliza a section na página */
+    width: 80%; /* Define a largura da section */
+}
+
+.apartamento {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 10px; /* Diminuindo o espaço entre os itens */
+    padding: 0 10%; /* Borda de 10% nas laterais */
+}
+
+.projects-list {
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Definindo uma altura fixa para as imagens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;  /* Garantir que a altura seja 100% do contêiner */
+    object-fit: cover; /* Faz as imagens preencherem a área */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.action-hoteis{
+    cursor: pointer;
+    background-color: var(--cor-principal);
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9s;
+    margin: 20px;
+}
+
+.action-hoteis:hover{
+    transform: scale(1.1);
+}
+/* FIM AAPARTAMENTOS */
+
+    /* INICIO RODAPE */
+    footer {
+        background-color: var(--cor-principal);
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    footer a{
+        text-decoration: none;
+        color: var(--cor-texto);
+    }
+
+    footer p{
+        margin: 0;
+    }
+
+    /* FIM RODAPE */

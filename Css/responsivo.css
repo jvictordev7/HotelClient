@@ -1,0 +1,141 @@
+/* Estilos gerais (aplicados em todas as telas) */
+
+/* Configuração básica para o corpo e elementos comuns */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #35CBCB; /* Azul */
+    --cor-secundaria: #188E8E; /* Azul Esc */
+    --cor-fundo: #FFFFFF; /* Branco */
+    --cor-texto: #000000; /* Texto escuro */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para dispositivos maiores (desktops) */
+.nav {
+    background-color: var(--cor-principal);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    padding: 50px;
+}
+
+.nav-list a:hover {
+    color: var(--cor-secundaria);
+}
+
+.main {
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url("../image/apartamento4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.main h1 {
+    color: #FFFFFF;
+    font-size: 54px;
+}
+
+.main p {
+    font-size: 24px;
+    font-style: italic;
+    color: var(--cor-principal);
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 1024px) {
+    /* Para tablets */
+    
+    .main h1 {
+        font-size: 42px;
+    }
+
+    .main p {
+        font-size: 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Para celulares */
+    
+    .nav-list a {
+        padding: 20px; /* Reduz o espaçamento nos links */
+    }
+
+    .main h1 {
+        font-size: 32px; /* Reduz o tamanho da fonte no título */
+    }
+
+    .main p {
+        font-size: 18px; /* Reduz o tamanho da fonte no parágrafo */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Apenas 1 coluna em dispositivos móveis */
+        padding: 0 5%; /* Reduz o padding nas laterais */
+    }
+
+    .about {
+        flex-direction: column; /* Ajusta o layout para ser em coluna no celular */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .about img {
+        max-width: 100%; /* Faz a imagem ocupar a largura completa da tela */
+        margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Para celulares menores */
+
+    .main h1 {
+        font-size: 28px; /* Ajusta ainda mais o tamanho da fonte */
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+
+    .projects-grid {
+        gap: 5px; /* Diminui o espaço entre os itens */
+    }
+
+    .action-hoteis {
+        font-size: 16px; /* Reduz o tamanho da fonte dos botões */
+        padding: 8px;
+    }
+}
