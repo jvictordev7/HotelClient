@@ -24,29 +24,47 @@ html {
   
   /* INICIO HEADER */
 
-.nav {
-    background-color: var(--cor-principal);
+  .nav {
+    background: linear-gradient(to bottom, var(--cor-principal), #FFFFFF);
     height: 50px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Garante que a logo fique à esquerda e os itens do menu fiquem à direita */
+    align-items: center;
     position: sticky; /*HEADER FIXO*/
     top: 0;           /*HEADER FIXO*/
     z-index: 9;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais do header */
+}
+
+.logo-container {
+    display: flex;
+    left: 50px;
+}
+
+.logo {
+    height: 30px; /* Ajuste a altura da logo conforme necessário */
+    width: auto;
+    margin-right: 20px; /* Espaçamento entre a logo e os itens do menu */
+    text-decoration: none;
 }
 
 .nav-list {
     display: flex;
     align-items: center;
     list-style: none;
-    margin-right: 28px;
 }
 
 .nav-list a {
     text-decoration: none;
     color: var(--cor-texto);
-    padding: 50px;
+    padding: 0 20px; /* Ajuste o espaçamento entre os links */
 }
+
+.nav-list a:hover {
+    color: var(--cor-secundaria);
+}
+
 
 .nav-list a:hover {
     color: var(--cor-secundaria);
@@ -220,7 +238,7 @@ html {
 
     /* INICIO RODAPE */
     footer {
-        background-color: var(--cor-principal);
+        background: linear-gradient(to top, var(--cor-principal), #FFFFFF);
         flex-direction: column;
         text-align: center;
         
