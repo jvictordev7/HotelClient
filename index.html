@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/responsivo.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <!-- INICIO HEADER -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#home"><strong>Home</strong></a>
+            </li>
+            <li>
+                <a href="#sobre"><strong>Sobre</strong></a>
+            </li>
+            <li>
+                <a href="#apartamentos"><strong>Apartamentos</strong></a>
+            </li>
+            <li>
+                <a href="#"><strong>Fale Conosco</strong></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO MAIN -->
+    <section id="home" class="main">
+        <div>
+            <h1>Olá, <br> Seja Bem Vindo</h1>
+            <p>Está procurando por apartamentos?</p>
+            <a href="#apartamentos">
+                <button class="call-to-action">
+                    Veja nossos apartamentos 👇
+                </button>
+            </a>
+        </div>
+     </section>
+     <!-- FIM DO MAIN -->
+
+     <!-- INICIO SOBRE -->
+
+     <section id="sobre" class="about">
+        <div>
+            <h2>Sobre</h2>
+            <p>Alugamos apartamentos que ficam dentro de condomínio, oferecendo uma experiência segura e confortável para os nossos clientes.</p><br><br>
+
+            <p>Nossos apartamentos estão localizados em áreas privilegiadas, com fácil acesso a serviços essenciais, garantindo praticidade e bem-estar para quem precisa de um local de estadia temporária ou de longo prazo.</p>
+        </div>
+        <img src="image/apartamentoSobre.jpg" alt="Apartamento sobre">
+     </section>
+
+     <!-- FIM SOBRE -->
+
+ <!-- INICIO APARTAMENTOS -->
+<section id="apartamentos" class="projects">
+    <h2 class="apartamento">Nossos Apartamento</h2>
+    <p class="apartamento">Conheça nossos apartamentos</p>
+
+    <div class="projects-grid">
+        <!-- Primeira Linha -->
+        <div class="projects-list">
+            <div class="carousel">
+                <img src="image/apartamento1/ap1.jpg" alt="Foto apartamento 1" class="carousel-image">
+                <img src="image/apartamento1/ap2.jpg" alt="Foto apartamento 2" class="carousel-image">
+                <button class="prev" onclick="changeImage(-1, 0)">&#10094;</button>
+                <button class="next" onclick="changeImage(1, 0)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="projects-list">
+            <div class="carousel">
+                <img src="image/apartamento2/ap1.jpg" alt="Foto apartamento 1" class="carousel-image">
+                <img src="image/apartamento2/ap2.jpg" alt="Foto apartamento 2" class="carousel-image">
+                <button class="prev" onclick="changeImage(-1, 1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="projects-list">
+            <div class="carousel">
+                <img src="image/apartamento1/ap1.jpg" alt="Foto apartamento 1" class="carousel-image">
+                <img src="image/apartamento1/ap2.jpg" alt="Foto apartamento 2" class="carousel-image">
+                <button class="prev" onclick="changeImage(-1, 2)">&#10094;</button>
+                <button class="next" onclick="changeImage(1, 2)">&#10095;</button>
+            </div>
+        </div>
+        
+        <!-- Segunda Linha -->
+        <div class="projects-list">
+            <div class="carousel">
+                <img src="image/apartamento2/ap1.jpg" alt="Foto apartamento 1" class="carousel-image">
+                <img src="image/apartamento2/ap2.jpg" alt="Foto apartamento 2" class="carousel-image">
+                <button class="prev" onclick="changeImage(-1, 3)">&#10094;</button>
+                <button class="next" onclick="changeImage(1, 3)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="projects-list">
+            <div class="carousel">
+                <img src="image/apartamento1/ap1.jpg" alt="Foto apartamento 1" class="carousel-image">
+                <img src="image/apartamento1/ap2.jpg" alt="Foto apartamento 2" class="carousel-image">
+                <button class="prev" onclick="changeImage(-1, 4)">&#10094;</button>
+                <button class="next" onclick="changeImage(1, 4)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="projects-list">
+            <div class="carousel">
+                <img src="image/apartamento2/ap1.jpg" alt="Foto apartamento 1" class="carousel-image">
+                <img src="image/apartamento2/ap2.jpg" alt="Foto apartamento 2" class="carousel-image">
+                <button class="prev" onclick="changeImage(-1, 5)">&#10094;</button>
+                <button class="next" onclick="changeImage(1, 5)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    
+    <button class="action-hoteis">Faça seu orçamento</button>
+</section>
+<!-- FIM APARTAMENTOS -->
+
+      <!-- INICIO RODAPE -->
+
+    <footer>
+        <h3>
+            <a href="#">Apartamentos</a>
+        </h3>
+        <p>Todos direitos reservados!</p>
+    </footer>
+
+    <!-- FIM RODAPE -->
+
+
+     <script src="Js/script.js"></script>
+</body>
+</html>
